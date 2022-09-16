@@ -1,0 +1,36 @@
+
+[
+    {
+        "name":"アジ",
+        "id":"",
+        "img":"aji.jpg",
+        "price":"1000",
+        "alcoholtype":["sake","wine","beer"],
+        "taste":["strong"],
+        "smell":["strong"]
+    },
+    {
+        "name":"カマス",
+        "id":"",
+        "price":"1000",
+        "alcoholtype":["sake","wine","beer"],
+        "taste":["strong"],
+        "smell":["strong"]
+    },
+    {
+        "name":"イボダイ",
+        "id":"",
+        "price":"1000",
+        "alcoholtype":["sake","wine","beer"],
+        "taste":["strong"],
+        "smell":["strong"]
+    },
+    {
+        "name":"イカ",
+        "id":"",
+        "price":"1000",
+        "alcoholtype":["sake","wine","beer"],
+        "taste":["strong"],
+        "smell":["strong"]
+    }
+]

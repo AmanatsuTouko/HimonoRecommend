@@ -1,0 +1,169 @@
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn--orange {
+    color: #fff;
+    background-color: #eb6100;
+    border-bottom: 5px solid #b84c00;
+}
+a.btn--orange:hover {
+    margin-top: 3px;
+    color: #fff;
+    background: #f56500;
+    border-bottom: 2px solid #b84c00;
+}
+a.btn--shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+a.btn--center{
+    margin-left: auto;
+    margin-right: auto;
+    margin:0 auto;
+}
+a.btn--width{
+    width: 40%;
+}
+a.btn--select_alcohol{
+    width: 400px;
+}
+
+p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    color: #6a2e36;
+}
+
+p.large{
+    font-size: 3.2rem;
+}
+
+.imgcenter{
+    width: 40%;
+    text-align: center;
+}
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*テキストボックス*/
+*{box-sizing: border-box;}
+
+.nice-wrap{
+  position: relative;
+}
+
+.nice-textbox{
+  width: 200px;
+  position: relative;
+  display: block;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  /*color: #a0a0a0;*/
+  color: #937e7c;
+  outline: none;
+}
+
+#nullSpace{
+    margin: 100px;
+}
+
+.box{
+    display:flex;
+    justify-content: center;
+}
+
+button.getButton{
+    background: #f56500;
+    color: #fff;
+}
+
+.whitebox{
+    border-radius: 5px;
+    margin       : auto;
+    width        : 310px;
+    height       : 100px;
+    background   : #ffffff;
+}
+
+.info-input-box{
+    width: 300px;
+    position: relative;
+    display: block;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    /*color: #a0a0a0;*/
+    color: #937e7c;
+    outline: none;
+  }
+
+  .info-input-box-tell{
+    width: 100px;
+    position: relative;
+    display: block;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    /*color: #a0a0a0;*/
+    color: #937e7c;
+    outline: none;
+  }
+
+.clickable-fontsize{
+    font-size: 150%;
+}
+
+
+.confirm-order-box{
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.confirm-order-box-inner{
+    margin: 30px;
+}

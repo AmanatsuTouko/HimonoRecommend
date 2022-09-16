@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="description" content=""> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <title>酒の肴~Himono~</title> 
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    window.onload = function() {
+        // URLを取得
+        const url = new URL(window.location.href);
+        // URLSearchParamsオブジェクトを取得
+        const params = url.searchParams;
+        // consoleに受け取ったパラメータを出力
+        console.log(params);
+        // パラメータから「text」を取得
+        const username = params.get("text");
+        // IDを使ってspan要素を取得する
+        const span = document.getElementById("receivedName");
+        // 取得したspan要素に受け取ったパラメータを代入
+        span.innerText = username;
+    }
+</script>
+
+</head>
+
+<body bgcolor="#ffd341">
+  <script type="text/javascript" src="getInputName.js"></script>
+
+  <div style="text-align: center">
+    <p class="large">ご注文内容の確認</p>
+  </div>
+
+  <div class="confirm-order-box">
+
+    <div class="confirm-order-box-inner">
+      <p>　</p>
+      <p>
+        <span id="receivedName"></span>　に合う干物をお届け
+      </p>
+  
+      <div style="display:flex">
+        <p>商品合計</p><p style="margin-left: auto;">4280円</p>
+      </div>
+
+      <div style="display:flex">
+        <p>送料</p><p style="margin-left: auto;">480円</p>
+      </div>
+
+      <p>　</p>
+      <div style="display:flex">
+        <p>合計金額</p><p style="margin-left: auto;">4760円</p>
+      </div>
+
+      <div style="display:flex">
+        <p>お届け予定日</p><p style="margin-left: auto;">9月26日</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center">
+    <p></p>
+    <a href="./InputCustomerInfo.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--width">購入者情報の入力へ進む</a>
+  </div>
+  
+
+
+</body> 
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="description" content=""> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <title>酒の肴~Himono~</title> 
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    window.onload = function() {
+        // URLを取得
+        const url = new URL(window.location.href);
+        // URLSearchParamsオブジェクトを取得
+        const params = url.searchParams;
+        // consoleに受け取ったパラメータを出力
+        console.log(params);
+        // パラメータから「text」を取得
+        const username = params.get("text");
+        // IDを使ってspan要素を取得する
+        const span = document.getElementById("receivedName");
+        // 取得したspan要素に受け取ったパラメータを代入
+        span.innerText = username;
+    }
+</script>
+
+</head>
+
+<body bgcolor="#ffd341">
+  <script type="text/javascript" src="getInputName.js"></script>
+
+  <div id="nullSpace"></div>
+
+  <div style="text-align: center">
+    <p class="large">そんな方におすすめの干物は</p>
+  </div>
+
+  <div class="confirm-order-box">
+    <div class="confirm-order-box-inner">
+      <div style="text-align: center">
+        <p class="large" style="color: #e86d6e">アジ</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center">
+    <img src="./aji.jpg" alt="">
+  </div>
+  
+  <div class="confirm-order-box">
+    <div class="confirm-order-box-inner">
+        <p>
+            <!--
+                <span id="receivedName"></span>
+            -->
+            コクのあるお酒が好きで
+            濃い味付けのおつまみが好きな方には、凝縮された旨みと油に満足していただけること間違いなし！
+        </p>
+    </div>
+  </div>
+
+  <div style="text-align: center">
+    <p></p>
+    <a href="./confirmBuy.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--width">注文内容の確認へ進む</a>
+  </div>
+  
+  <div style="text-align: center">
+    <p></p>
+    <a href="./index.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--width">最初からやり直す</a>
+  </div>
+
+  <div id="nullSpace"></div>
+
+</body> 
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="description" content=""> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <title>酒の肴~Himono~</title> 
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body bgcolor="#ffd341">
+    <script type="text/javascript" src="getInputName.js"></script>
+
+    <div id="nullSpace"></div>
+
+    <div style="text-align: center">
+        <p class="large">プレゼントしたい人の<br>好みのお酒を選択してください！</p>
+
+        <p>醸造酒</p>
+        <a href="./select_japanese_sake.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">日本酒</a>
+        <p></p>
+        <a href="./select_beer.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">ビール</a>
+        <p></p>
+        <a href="./select_wine.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">ワイン</a>
+        <p></p>
+        <p>蒸留酒</p>
+        <a href="./select_alcohol.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">泡盛</a>
+        <p></p>
+        <a href="./select_alcohol.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">焼酎</a>
+        <p></p>
+        <a href="./select_alcohol.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">ウイスキー</a>
+        <p></p>
+        <a href="./select_alcohol.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">ブランデー</a>
+        <p></p>
+        <a href="./select_alcohol.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">ジン</a>
+        <p></p>
+        <a href="./select_alcohol.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">ウォッカ</a>
+        <p></p>
+        <a href="./select_alcohol.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">ラム</a>
+        <p></p>
+        <a href="./select_alcohol.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">テキーラ</a>
+        <p></p>
+        <p>混成酒</p>
+        <a href="./select_alcohol.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">梅酒</a>
+        <p></p>
+        <a href="./select_alcohol.html" class="btn btn--orange btn--cubic btn--shadow btn--center btn--select_alcohol">リキュール</a>
+        <p></p>
+    </div>
+
+    <div id="nullSpace"></div>
+
+    <div style="text-align: center">
+        <p class="large">銘柄を入力しておまかせする</p>
+    </div>
+    
+    <form action="./select_tumami.html" method="GET">
+    <div class="box">
+        <div class="nice-wrap">
+            <input class="nice-textbox" type="text" name="text" id="input-name"/>
+        </div>
+        <button class="btn getButton" onclick="getInputText()">決定</a>
+    </form>
+    </div>
+
+    <div style="text-align: center">
+        <p>決定を押すと、おつまみの好み選択に進みます。</p>
+    </div>
+
+    <div id="nullSpace"></div>
+
+</body> 
+</html>
